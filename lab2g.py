@@ -5,16 +5,15 @@
 
 import sys
 
-timer = int(sys.argv)
   
-while len(sys.argv) != 2:
-   print(timer)
-   timer -= 1
-   
-if timer == 3:
-   print(timer)
+if len(sys.argv) > 1:
+    timer = int(sys.argv[1])
 else:
-   print(timer)
-   timer == 3
-   timer -= 1
-print("blast off!")   
+    timer = 3
+
+
+while timer > 0:
+    print(timer)
+    timer -= 1
+
+print("blast off!")
